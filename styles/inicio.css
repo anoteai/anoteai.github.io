@@ -1,0 +1,102 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background: url('https://i.imgur.com/iuZhKx6.png');
+    background-size: cover;
+}
+
+form{
+    align-items: center;
+    background-color: #363535;
+    border-radius: 4px;
+    margin: 80px auto;
+    padding: 60px;
+    max-width: 1000px;
+    box-sizing: border-box;
+}
+
+.styling{
+    font-size: 50px;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.input_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.input_div .input{
+    padding: 0.5rem 1rem;
+    height: 50px;
+    outline: none;
+    background: #fff;
+    width: 450px;
+    font-size: 1.5rem;
+    margin: 0.25rem;
+    border-radius: 25px;
+    border: none;
+}
+
+.addButton{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    background-color: lime;
+    color: #fff;
+    margin: 0.25;
+    cursor: pointer;
+}
+
+.addButton:hover{
+    opacity: .7;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.item{
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 4px solid #fff;
+}
+
+.item_input{
+    background: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    width: 350px;
+    font-size: 1.4rem;
+}
+
+.editButton{
+    font-size: 1.4rem;
+    margin: 0 0.75rem;
+    font-size: 'Hind' sans-serif;
+    background: none;
+    outline: none;
+    color: lime;
+    border: none;
+}
+
+.removeButton{
+    font-size: 1.4rem;
+    margin: 0 0.75rem;
+    font-size: 'Hind' sans-serif;
+    background: none;
+    outline: none;
+    color: #e00;
+    border: none;
+}
