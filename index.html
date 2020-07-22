@@ -26,6 +26,7 @@
         <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" id='googleButton'></div>
 
         <script>
+        function onSignIn(googleUser) {
             var profile = googleUser.getBasicProfile();
 
             const googleButton = document.getElementById('googleButton');
@@ -36,6 +37,7 @@
             loginText.hidden = true;
 
             welcomeText.innerHTML = `Beleza, ${profile.getName()}, agora você pode anotar!`
+        }
         </script>
     </form>
 </body>
