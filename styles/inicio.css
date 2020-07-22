@@ -4,10 +4,15 @@ body{
     background-size: cover;
 }
 
+#pageTitle{
+    font-size: 50px;
+    color: white;
+}
+
 form{
     align-items: center;
     background-color: #363535;
-    border-radius: 4px;
+    border-radius: 8px;
     margin: 80px auto;
     padding: 60px;
     max-width: 1000px;
@@ -21,14 +26,16 @@ form{
     color: white;
 }
 
-.input_div{
+.inputDiv{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    margin-bottom: 20px;
 }
 
-.input_div .input{
+.inputDiv  .input{
     padding: 0.5rem 1rem;
     height: 50px;
     outline: none;
@@ -40,7 +47,7 @@ form{
     border: none;
 }
 
-.addButton{
+.add{
     height: 50px;
     width: 50px;
     border-radius: 25px;
@@ -55,6 +62,12 @@ form{
 
 .addButton:hover{
     opacity: .7;
+}
+
+#profilePic{
+    border-radius: 50%;
+    height: 50%;
+    width: 50%;
 }
 
 .container{
@@ -81,7 +94,7 @@ form{
     font-size: 1.4rem;
 }
 
-.editButton{
+.edit{
     font-size: 1.4rem;
     margin: 0 0.75rem;
     font-size: 'Hind' sans-serif;
@@ -89,14 +102,15 @@ form{
     outline: none;
     color: lime;
     border: none;
+    cursor: pointer;
 }
 
-.removeButton{
+.remove{
     font-size: 1.4rem;
-    margin: 0 0.75rem;
     font-size: 'Hind' sans-serif;
     background: none;
     outline: none;
     color: #e00;
     border: none;
+    cursor: pointer;
 }
