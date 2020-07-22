@@ -38,6 +38,14 @@
 
                 profilePic.src = `${profile.getImageUrl()}`
                 profilePic.hidden = false;
+
+                var loginInfo  = {
+                    nome: profile.getName(),
+                    id: profile.getId(),
+                    image: profile.getImageUrl()
+                }
+
+                console.log(loginInfo)
             }
         </script>
     </form>
