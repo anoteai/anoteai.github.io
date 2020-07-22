@@ -8,3 +8,7 @@ api.use(bodyParser.json());
 api.listen(process.env.PORT || 3000, () => {
     console.log(`Anote ai na port http://localhost:3000`)
 })
+
+api.get('/*', (req, res) => {
+    res.send('https://igorduca.github.io')
+})
