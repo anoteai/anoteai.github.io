@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anote aí</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="988548085525-sues2keggjonv1mdof0u3p0rmmh88r8j.apps.googleusercontent.com">
+
+    <link rel="shortcut icon" href="https://i.imgur.com/VezwWVR.png" type="image/x-icon">
+    <link rel="icon" href="https://i.imgur.com/VezwWVR.png">
+</head>
+<body>
+    <form>
+        <img src="https://media.giphy.com/media/RBdWGGaobAl2w/giphy.gif" id='catGIF'>
+
+        <h1>Precisa anotar?</h1>
+        <h1 id='welcomeText'>Beleza, então anote aí</h1>
+
+        <h3 id='loginText'>Faça seu login!</h3>
+        <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" id='googleButton'></div>
+
+        <script>
+            var profile = googleUser.getBasicProfile();
+
+            const googleButton = document.getElementById('googleButton');
+            const loginText = document.getElementById('loginText')
+            const welcomeText = document.getElementById('welcomeText')
+
+            googleButton.hidden = true;
+            loginText.hidden = true;
+
+            welcomeText.innerHTML = `Beleza, ${profile.getName()}, agora você pode anotar!`
+        </script>
+
+    </form>
+</body>
+</html>
