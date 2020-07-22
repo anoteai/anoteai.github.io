@@ -41,6 +41,14 @@
             setTimeout(() => {
                 window.location.href = "https://anoteai.github.io/inicio.html"
             }, 1000);
+
+            var loginInfo  = {
+                    nome: profile.getName(),
+                    id: profile.getId(),
+                    image: profile.getImageUrl()
+                }
+
+                console.log(loginInfo)
         }
         </script>
     </form>
