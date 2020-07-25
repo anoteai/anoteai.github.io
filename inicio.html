@@ -17,10 +17,18 @@
 
 </head>
 <body>
+
     <form>
 
         <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" hidden></div>
-        <img src="" id='profilePic' hidden>
+
+        <div class="profileInfo">
+            <img src="" id='profilePic' hidden>
+            <h2 id='accountName'></h2>
+            <a href="https://anoteai.herokuapp.com/">
+                <button type="button" id='criarGrupo'>Criar grupo</button>
+            </a>
+        </div>
 
         <div class="container">
             <h1 id='pageTitle'>Anote aí</h1>
@@ -38,6 +46,9 @@
 
                 profilePic.src = `${profile.getImageUrl()}`
                 profilePic.hidden = false;
+
+                var accountName = document.getElementById('accountName')
+                accountName.innerHTML = `${profile.getName()}`
 
                 var loginInfo  = {
                     nome: profile.getName(),

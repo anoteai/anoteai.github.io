@@ -1,12 +1,42 @@
 body{
     font-family: 'Poppins', sans-serif;
-    background: url('https://i.imgur.com/iuZhKx6.png');
+    background: url('https://wallpaperplay.com/walls/full/7/9/8/121419.jpg');
     background-size: cover;
 }
 
 #pageTitle{
     font-size: 50px;
     color: white;
+}
+
+#accountName{
+    color: white;
+    margin-left: 30px;
+}
+
+.profileInfo{
+    display: flex;
+    align-items: center;
+}
+
+#criarGrupo{
+    margin-left: 25px;
+    width: 200px;
+    height: 50px;
+    background-color: #328da8;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 400ms;
+    border: 0;
+
+    margin-left: 360px;
+}
+
+#criarGrupo:hover{
+    background: url('https://media.giphy.com/media/3og0IV7MOCfnm85iRa/giphy.gif');
 }
 
 form{
